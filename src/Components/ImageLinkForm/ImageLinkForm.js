@@ -4,9 +4,7 @@ const ImageLinkForm = () => {
   return (
     <div>
       <p className="f3">
-        {
-          'This Magic Brain will detect faces in your pictures. Git in a try.'
-        }
+        {'매직 브레인은 사진에서 얼굴을 감지합니다'}
       </p>
       <div className="center">
         <div className="form center pa4 br3 shadow-5">
