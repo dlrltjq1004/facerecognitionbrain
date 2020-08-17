@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Rank = () => {
+const Rank = ({ name, entries }) => {
   return (
     <div className="white f3">
-      {'당신의 랭크'}
-      <div className="white f1">{'#5'}</div>
+      {`${name} 귀하의 현재 참가 횟수는...`}
+      <div className="white f1"> #{entries}</div>
     </div>
   );
 };
