@@ -16,7 +16,8 @@ class Signin extends React.Component {
   };
 
   onSubmitSignIn = () => {
-    fetch('http://localhost:3000/signin', {
+    const { PORT, SERVER_ADDRESS } = process.env;
+    fetch(`http://${SERVER_ADDRESS}${PORT}/signin`, {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
